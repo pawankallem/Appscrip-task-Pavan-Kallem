@@ -10,17 +10,17 @@ export default function Home() {
           content="Explore the SEO-ready Lorem Ipsum Dolor project with semantic headings, schema markup, and image optimization."
         />
         
-        {/* <script type="application/ld+json">
+        <script type="application/ld+json">
           {`
             {
               "@context": "https://schema.org",
               "@type": "WebPage",
               "name": "Lorem Ipsum Dolor",
               "description": "Explore the SEO-ready Lorem Ipsum Dolor project with semantic headings, schema markup, and image optimization.",
-              "url": "https://yourdomain.com/"
+              "url": "https://appscrip-task-pavan-kallem.vercel.app/"
             }
           `}
-        </script> */}
+        </script>
       </Head>
 
       <main className="p-8 max-w-3xl mx-auto">
