@@ -1,0 +1,64 @@
+.header {
+    font-family: sans-serif;
+  }
+  
+  .topBar {
+    background: #000;
+    color: #d14e73;
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    padding: 8px 0;
+  }
+  
+  .middleBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+  }
+  
+  .logoLeft {
+    height: 40px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .icons img {
+    height: 20px;
+    margin-left: 16px;
+    cursor: pointer;
+  }
+  
+  .language {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 16px;
+  }
+  
+  .language img {
+    height: 18px;
+    margin-right: 4px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 16px 0;
+    font-weight: bold;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.2s ease;
+  }
+  
+  .navbar a:hover {
+    color: #d14e73;
+  }
+  
