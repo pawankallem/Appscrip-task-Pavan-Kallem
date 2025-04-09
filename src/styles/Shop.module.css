@@ -1,0 +1,107 @@
+.mainContainer {
+  border: 1px solid red;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filtersContainer {
+  width: 30%;
+  height: 100%;
+  border: 1px solid blue;
+}
+
+.shopingItemsContainer {
+  width: 70%;
+  height: 100%;
+  border: 1px solid brown;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #fff;
+  transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-weight: bold;
+  color: #333;
+}
+
+/* ----------- TABLET (768px to 1024px) ------------ */
+@media screen and (max-width: 1024px) {
+  .mainContainer {
+    flex-direction: column;
+  }
+  .shopingItemsContainer {
+    width: 100%;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heading {
+    font-size: 1.8rem;
+  }
+}
+
+/* ----------- MOBILE (up to 767px) ------------ */
+@media screen and (max-width: 767px) {
+  .mainContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+  .shopingItemsContainer {
+    width: 100%;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .title {
+    font-size: 0.9rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+}

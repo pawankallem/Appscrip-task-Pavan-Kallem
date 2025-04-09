@@ -19,7 +19,7 @@ export default function Layout({ children, title, description, schema }) {
       <Header />
       <hr />
 
-      <main style={{ padding: "2rem", maxWidth: "768px", margin: "0 auto" }}>
+      <main style={{ padding: "2rem", maxWidth: "1200px", margin: "0 auto" }}>
         <div className="sub-heading">
           <h2>DISCOVER OUR PRODUCTS</h2>
           <p>

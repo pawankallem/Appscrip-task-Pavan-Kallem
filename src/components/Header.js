@@ -27,7 +27,7 @@ export default function Header() {
 
       <nav className={styles.navbar}>
         <Link href="/shop">SHOP</Link>
-        {/* <Link href="/skills">SKILLS</Link> */}
+        <Link href="/skills">SKILLS</Link>
         <Link href="/stories">STORIES</Link>
         <Link href="/about">ABOUT</Link>
         <Link href="/contact">CONTACT US</Link>

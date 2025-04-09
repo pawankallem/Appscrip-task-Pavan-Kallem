@@ -1,81 +1,94 @@
 .footer {
-    background: #000;
-    color: #fff;
-    padding: 2rem;
-    font-family: sans-serif;
-  }
-  
+  background: #000;
+  color: #fff;
+  padding: 2rem;
+  font-family: sans-serif;
+}
+
+.topSection {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.subscribe h4,
+.contact h4 {
+  margin-bottom: 0.5rem;
+}
+
+.subscribe input {
+  padding: 10px;
+  width: 250px;
+  margin-right: 8px;
+  border: none;
+}
+
+.subscribe button {
+  padding: 10px 16px;
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.divider {
+  margin: 2rem 0;
+  border: 0.5px solid #333;
+}
+
+.bottomSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.bottomSection h4 {
+  margin-bottom: 0.5rem;
+}
+
+.bottomSection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bottomSection li {
+  margin-bottom: 0.3rem;
+}
+
+.rightSection {
+  max-width: 200px;
+}
+
+.socialIcons span {
+  font-size: 1.5rem;
+  margin-right: 8px;
+}
+
+.paymentIcons img {
+  height: 24px;
+  margin-right: 8px;
+  margin-top: 8px;
+}
+
+.copyRight {
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 2rem;
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 767px) {
   .topSection {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-  }
-  
-  .subscribe h4,
-  .contact h4 {
-    margin-bottom: 0.5rem;
-  }
-  
-  .subscribe input {
-    padding: 10px;
-    width: 250px;
-    margin-right: 8px;
-    border: none;
-  }
-  
-  .subscribe button {
-    padding: 10px 16px;
-    background: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .divider {
-    margin: 2rem 0;
-    border: 0.5px solid #333;
-  }
-  
-  .bottomSection {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2rem;
-  }
-  
-  .bottomSection h4 {
-    margin-bottom: 0.5rem;
-  }
-  
-  .bottomSection ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .bottomSection li {
-    margin-bottom: 0.3rem;
-  }
-  
-  .rightSection {
-    max-width: 200px;
-  }
-  
-  .socialIcons span {
-    font-size: 1.5rem;
-    margin-right: 8px;
-  }
-  
-  .paymentIcons img {
-    height: 24px;
-    margin-right: 8px;
-    margin-top: 8px;
-  }
-  
-  .copyRight {
+    flex-direction: column;
     text-align: center;
-    font-size: 0.85rem;
-    margin-top: 2rem;
-    opacity: 0.6;
   }
-  
+  .bottomSection {
+    flex-direction: column;
+    text-align: center;
+  }
+  .rightSection {
+    max-width: 100%;
+  }
+}
