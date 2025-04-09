@@ -1,6 +1,13 @@
 import Layout from '@/components/Layout';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 export default function Home() {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.replace('/shop');
+  }, [router]);
   return (
     <Layout
       title="Home – Lorem Ipsum Dolor"
