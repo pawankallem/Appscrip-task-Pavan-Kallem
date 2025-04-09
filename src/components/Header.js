@@ -1,4 +1,5 @@
-import styles from '../styles/Header.module.css';
+import Link from "next/link";
+import styles from "../styles/Header.module.css";
 
 export default function Header() {
   return (
@@ -25,11 +26,11 @@ export default function Header() {
       </div>
 
       <nav className={styles.navbar}>
-        <a href="/shop">SHOP</a>
-        {/* <a href="/skills">SKILLS</a> */}
-        <a href="/stories">STORIES</a>
-        <a href="/about">ABOUT</a>
-        <a href="/contact">CONTACT US</a>
+        <Link href="/shop">SHOP</Link>
+        {/* <Link href="/skills">SKILLS</Link> */}
+        <Link href="/stories">STORIES</Link>
+        <Link href="/about">ABOUT</Link>
+        <Link href="/contact">CONTACT US</Link>
       </nav>
     </header>
   );
