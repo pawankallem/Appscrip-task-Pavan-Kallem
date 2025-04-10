@@ -51,7 +51,6 @@
   color: #333;
 }
 
-
 .filters {
   display: flex;
   flex-direction: column;
@@ -81,6 +80,37 @@
   color: #888;
 }
 
+.hideFilter {
+  color: #888792;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.selectFilters {
+  border: none; 
+  padding: 10px 15px; 
+  border-radius: 6px; 
+  background-color: #f0f0f0; 
+  font-size: 16px;
+  outline: none; 
+  cursor: pointer;
+}
+
+.filterResultsContainer {
+  margin: 10px 0;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filterResult_HideFilterContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
 
 /* ----------- TABLET (768px to 1024px) ------------ */
 @media screen and (max-width: 1024px) {
@@ -139,5 +169,17 @@
 
   .price {
     font-size: 1rem;
+  }
+
+  /* .numberOfResults {
+    display: none;
+  } */
+
+  .filterResult_HideFilterContainer {
+    display: none;
+  }
+
+  .selectFilters {
+    margin-left: auto;
   }
 }

@@ -47,6 +47,24 @@ export default function Shop({ products }) {
       title="Shop – Lorem Ipsum Dolor"
       description="Shop at Lorem Ipsum Dolor"
     >
+      <hr />
+      <div className={styles.filterResultsContainer}>
+        <div className={styles.filterResult_HideFilterContainer}>
+          <h4 className={styles.numberOfResults}>3425 ITEMS</h4>
+          <div className={styles.hideFilter}>
+            {" "}
+            <img src="/icons/arrowLeft.png" alt="hide filter" /> HIDE Filter
+          </div>
+        </div>
+        <select className={styles.selectFilters}>
+          <option value="recommended">RECOMMENDED</option>
+          <option value="latest">Newest first</option>
+          <option value="popular">popular</option>
+          <option value="highToLow">Price : high to low</option>
+          <option value="lowToHigh">Price : low to high</option>
+        </select>
+      </div>
+      <hr />
       <div className={styles.mainContainer}>
         <div className={styles.filtersContainer}>
           <div className={styles.filters}>

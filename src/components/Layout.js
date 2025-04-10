@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Footer from "./Footer";
 import Header from "./Header";
+import styles from "@/styles/Layout.module.css"
 
 export default function Layout({ children, title, description, schema }) {
   return (
@@ -19,10 +20,10 @@ export default function Layout({ children, title, description, schema }) {
       <Header />
       <hr />
 
-      <main style={{ padding: "2rem", maxWidth: "1200px", margin: "0 auto" }}>
-        <div className="sub-heading">
+      <main style={{ padding: "2% 5%", margin: "0 auto" }}>
+        <div className={styles.subHeading}>
           <h2>DISCOVER OUR PRODUCTS</h2>
-          <p>
+          <p className="">
             Lorem ipsum dolor sit amet consectetur. Amet est posuere rhoncus{" "}
           </p>
           <p>
